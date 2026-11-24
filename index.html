@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PrepPathQuiz - practice for internships and placements with technical, aptitude, programming, HR, reasoning and computer fundamentals quizzes.">
+  <title>PrepPathQuiz | Internship & Placement Preparation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="PrepPathQuiz home" id="brandHome">
+      <span class="brand-mark">P</span>
+      <span><strong>PrepPath<span>Quiz</span></strong><small>LEARN · PRACTICE · SUCCEED</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <button class="nav-link active" data-view="home">Dashboard</button>
+      <button class="nav-link" data-view="categories">Categories</button>
+      <button class="nav-link" data-view="how">How it works</button>
+    </nav>
+    <button class="top-cta" id="headerStart">Start practicing <span>→</span></button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="homeView">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR CAREER PREPARATION PARTNER</div>
+        <h1>Turn your preparation<br>into <span>placement success.</span></h1>
+        <p class="hero-description">Build confidence one question at a time. Practise essential skills, understand every answer and get ready for your next opportunity.</p>
+        <div class="hero-actions">
+          <button class="primary-btn" id="exploreBtn">Explore quiz categories <span>→</span></button>
+          <button class="text-btn" id="howBtn">How it works <span>↗</span></button>
+        </div>
+        <div class="hero-proof">
+          <div class="proof-avatars"><i>✓</i><i>★</i><i>+</i></div>
+          <span><strong>Practice at your pace</strong><small>Learn from every attempt</small></span>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a student preparing for a career">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="floating-card card-top"><span class="mini-icon">✓</span><span><b>Keep improving</b><small>One step at a time</small></span></div>
+        <div class="student-card">
+          <div class="window-bar"><i></i><i></i><i></i><span>PREPPATH / LEARNING</span></div>
+          <div class="screen-content">
+            <div class="screen-heading"><span>YOUR NEXT CHAPTER</span><b>Ready, set, grow!</b></div>
+            <div class="screen-progress"><span></span></div>
+            <div class="screen-lines"><i></i><i></i><i></i></div>
+            <div class="screen-checks"><span>✓</span><span>✓</span><span>?</span></div>
+          </div>
+          <div class="student-illustration">
+            <div class="plant"><i></i><i></i><b></b></div>
+            <div class="person"><div class="hair"></div><div class="face"><i></i><b></b></div><div class="neck"></div><div class="body"></div><div class="arm"></div></div>
+            <div class="laptop"><span>P</span></div>
+          </div>
+        </div>
+        <div class="floating-card card-bottom"><span class="trophy">★</span><span><b>Your goals matter</b><small>Make progress today</small></span></div>
+        <div class="decor decor-a"></div><div class="decor decor-b"></div>
+      </div>
+    </section>
+
+    <section class="stats-strip" aria-label="Quiz highlights">
+      <div><strong>06</strong><span>Practice categories</span></div>
+      <div><strong>20</strong><span>Questions per quiz</span></div>
+      <div><strong>Instant</strong><span>Answer explanations</span></div>
+      <div><strong>Anytime</strong><span>Learn at your pace</span></div>
+    </section>
+
+    <section class="section categories-section" id="categoriesView">
+      <div class="section-heading">
+        <div><span class="section-kicker">CHOOSE YOUR PRACTICE AREA</span><h2>Explore quiz categories</h2><p>Pick a topic and start sharpening your skills.</p></div>
+        <span class="question-count">20 questions in each quiz <b>↗</b></span>
+      </div>
+      <div class="category-grid" id="categoryGrid"></div>
+    </section>
+
+    <section class="how-section" id="howView">
+      <div class="section-heading centered">
+        <span class="section-kicker">A SIMPLE WAY TO GET BETTER</span>
+        <h2>Practice. Learn. Repeat.</h2>
+        <p>Every attempt is a chance to build confidence.</p>
+      </div>
+      <div class="steps-grid">
+        <article class="step-card"><span class="step-number">01</span><div class="step-icon">▦</div><h3>Choose a category</h3><p>Select the subject you want to practise, from technical skills to HR interviews.</p></article>
+        <article class="step-card"><span class="step-number">02</span><div class="step-icon">✎</div><h3>Answer each question</h3><p>Choose from four options. Submit your answer to see instant feedback.</p></article>
+        <article class="step-card"><span class="step-number">03</span><div class="step-icon">↗</div><h3>Review your result</h3><p>Check your score, revisit explanations and try again to improve.</p></article>
+      </div>
+    </section>
+
+    <section class="callout">
+      <div><span class="section-kicker">YOUR FUTURE STARTS WITH PRACTICE</span><h2>Small steps. Stronger skills.<br><span>Better opportunities.</span></h2></div>
+      <button class="primary-btn" id="bottomStart">Start a quiz <span>→</span></button>
+      <div class="callout-shape"></div>
+    </section>
+
+    <section class="quiz-view hidden" id="quizView">
+      <div class="quiz-shell">
+        <button class="back-link" id="backToCategories">← Back to categories</button>
+        <div class="quiz-topline"><span class="quiz-category-label" id="quizCategoryLabel">TECHNICAL</span><span id="questionCounter">QUESTION 1 OF 20</span></div>
+        <div class="progress-track"><span id="progressBar"></span></div>
+        <div class="quiz-card">
+          <div class="quiz-card-heading"><span class="question-icon">?</span><span id="questionTopic">Knowledge check</span></div>
+          <h2 id="questionText">Question text appears here.</h2>
+          <div class="options-list" id="optionsList"></div>
+          <div class="feedback-box hidden" id="feedbackBox" aria-live="polite"></div>
+          <div class="quiz-controls"><span id="answeredHint">Choose the best answer.</span><button class="primary-btn" id="submitAnswer" disabled>Submit answer <span>→</span></button></div>
+        </div>
+        <p class="quiz-note">Take your time. Read the explanation after each answer to strengthen your understanding.</p>
+      </div>
+    </section>
+
+    <section class="result-view hidden" id="resultView">
+      <div class="result-card">
+        <div class="result-icon" id="resultIcon">★</div>
+        <span class="section-kicker">QUIZ COMPLETED</span>
+        <h2 id="resultTitle">Well done!</h2>
+        <p id="resultMessage">Here is your practice summary.</p>
+        <div class="score-ring" id="scoreRing"><div><strong id="scoreValue">0%</strong><small>YOUR SCORE</small></div></div>
+        <div class="result-stats"><div><strong id="correctValue">0</strong><span>Correct</span></div><div><strong id="wrongValue">0</strong><span>Incorrect</span></div><div><strong id="totalValue">20</strong><span>Total</span></div></div>
+        <div class="result-actions"><button class="primary-btn" id="retryBtn">Try again ↻</button><button class="secondary-btn" id="resultHomeBtn">Back to dashboard</button></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand footer-brand" href="#"><span class="brand-mark">P</span><span><strong>PrepPath<span>Quiz</span></strong><small>LEARN · PRACTICE · SUCCEED</small></span></a><p>Made for learners preparing for their next opportunity.</p><span>© <span id="year"></span> PrepPathQuiz</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
